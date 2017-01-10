@@ -44,3 +44,17 @@ console.log(add(2, 4));
 console.log(add(5, 7));
 console.log(add("Hi", 5));  //When you input a string, it turn the entire result as string. So if you inputed "hi" and 5, you will get "hi5"
 
+
+// Function that takes two numbers and multiplies them
+
+function multiply (a, b){
+    return a * b;
+}
+
+console.log(multiply(2, 4));
+console.log(multiply(5, 10));
+console.log(multiply("Hi", 4)); //Return "NAN" which means not a number
+
+
+
+
