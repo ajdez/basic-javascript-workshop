@@ -83,6 +83,18 @@ console.log(operator(5, 2, "div"));
 console.log(operator(5, 2, "Hola Senior"));
 
 
+//function that take string and number and repeat string the inputed amount of times
 
+function repeat (str, num){
+    var string = "";
+    for(var i = 0; i < num; i++){
+        string += str;
+    }
+    return string;
+}
+
+console.log(repeat("hello", 3));
+console.log(repeat("Johny", 5));
+console.log(repeat("wow", 10));
 
 
