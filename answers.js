@@ -56,5 +56,33 @@ console.log(multiply(5, 10));
 console.log(multiply("Hi", 4)); //Return "NAN" which means not a number
 
 
+// function that takes 2 numbers and str stating what type of operation to complete
+
+function operator(numOne, numTwo, str){
+    if(str ==="add"){
+        return numOne + numTwo;
+    }
+    else if (str === "subtract"){
+        return numOne - numTwo;
+    }
+    else if (str === "mult"){
+        return numOne * numTwo;
+    }
+    else if (str === "div"){
+        return numOne / numTwo
+    }
+    else{
+        return 0;
+    }
+}
+
+console.log(operator(5, 2, "add"));
+console.log(operator(5, 2, "subtract"));
+console.log(operator(5, 2, "mult"));
+console.log(operator(5, 2, "div"));
+console.log(operator(5, 2, "Hola Senior"));
+
+
+
 
 
