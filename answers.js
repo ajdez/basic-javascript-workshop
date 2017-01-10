@@ -258,3 +258,14 @@ function truthy (array){
 }
 var arr = [3, 4, "", 0, 85, null];
 console.log(truthy(arr));
+
+
+// sum of numbers in array
+
+function addArray (arr){
+    return arr.reduce((a,b)=>(a+b));
+}
+
+var array = [3, 4, 9];
+
+console.log(addArray(array));
