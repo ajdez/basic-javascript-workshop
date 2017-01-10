@@ -98,3 +98,17 @@ console.log(repeat("Johny", 5));
 console.log(repeat("wow", 10));
 
 
+//Function that prints numbers 1 to 10
+
+function oneToTen(){
+    for(var i = 1; i <= 10; i++){
+        console.log(i);
+    }
+}
+
+oneToTen();
+
+
+
+
+
