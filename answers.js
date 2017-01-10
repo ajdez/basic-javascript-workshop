@@ -210,3 +210,25 @@ function longestWord(str){
 console.log(longestWord("Look at all the little kittens"));
 console.log(longestWord("If only I could dance, I would always be dancing"));
 console.log(longestWord("Look at all the little dogs"));
+
+
+// Capitalized all letters in str
+
+function helloWorld(str){
+    if ((/[A-Z]/.test(str)) == false){
+        return str.toUpperCase();
+    }
+    else if ((/[A-Z]/.test(str)) == true){
+        var list = [];
+        var string = str.toLowerCase();
+        var array = string.split(" ");
+        for (var i = 0; i < array.length; i++){
+            list.push(array[i][0].toUpperCase() + array[i].substring(1,array[i].length));
+        }
+        return list.join(' ');
+    }
+}
+
+console.log(helloWorld("Hello World"));
+console.log(helloWorld("hello world"));
+console.log(helloWorld("like So many others"));
