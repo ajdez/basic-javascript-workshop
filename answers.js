@@ -173,3 +173,24 @@ function reverseStr(str){
 console.log(reverseStr("Anthony"));
 console.log(reverseStr("Hello Friends"));
 console.log(reverseStr(""));
+
+
+// function that  return the factoral
+
+function factorial (num){
+    if (num < 0){
+        return "not applicable";
+    }
+    else if (num === 0){
+        return 1;
+    }
+    else{
+        return num * factorial(num - 1);
+    }
+}
+
+console.log(factorial(5));
+console.log(factorial(3));
+console.log(factorial(-10));
+console.log(factorial(0));
+
