@@ -232,3 +232,29 @@ function helloWorld(str){
 console.log(helloWorld("Hello World"));
 console.log(helloWorld("hello world"));
 console.log(helloWorld("like So many others"));
+
+
+// function that returns the largest number in the array
+
+function largestNum (arr){
+    var large = 0;
+    for (var i = 0; i <= arr.length; i++){
+        if (arr[i] > large){
+            large = arr[i];
+        }
+    }
+    return large;
+}
+
+console.log(largestNum([2, 3, 4]));
+console.log(largestNum([8, 3, 20]));
+console.log(largestNum([2, 30, 4]));
+
+
+// Function that checks for truthy values
+
+function truthy (array){
+    return array.filter(function(array){return !!array;})
+}
+var arr = [3, 4, "", 0, 85, null];
+console.log(truthy(arr));
