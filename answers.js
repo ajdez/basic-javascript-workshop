@@ -151,4 +151,14 @@ function oneToTenString (){
 oneToTenString();
 
 
-//
+//Prints numbers 1 to 10 by their own value
+
+function numberPrint (){
+    for(var i = 1; i<= 10; i++){
+        for(var j = 0; j < i; j++){
+            console.log(i);
+        }
+    }
+}
+
+numberPrint();
