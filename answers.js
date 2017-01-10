@@ -194,3 +194,19 @@ console.log(factorial(3));
 console.log(factorial(-10));
 console.log(factorial(0));
 
+
+// takes phrase string and return the longest word
+function longestWord(str){
+    var sentence = str.split(" ");
+    var longestWord = "";
+    for (var i = 0; i < sentence.length; i++){
+        if (longestWord.length < sentence[i].length){
+            longestWord = sentence[i];
+        }
+    }
+    return longestWord;
+}
+
+console.log(longestWord("Look at all the little kittens"));
+console.log(longestWord("If only I could dance, I would always be dancing"));
+console.log(longestWord("Look at all the little dogs"));
