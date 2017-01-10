@@ -163,4 +163,13 @@ function numberPrint (){
 
 numberPrint();
 
-//ddddd
+// function that return the reverse of the string entered
+
+function reverseStr(str){
+    var newStr = str.split("").reverse().join('');
+    return newStr;
+}
+
+console.log(reverseStr("Anthony"));
+console.log(reverseStr("Hello Friends"));
+console.log(reverseStr(""));
