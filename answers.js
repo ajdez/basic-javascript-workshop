@@ -7,9 +7,9 @@ function firstLetter(str){
     return str.substring(0,1);
 }
 
-firstLetter("Anthony");
-firstLetter("Ziad");
-firstLetter("");
+console.log(firstLetter("Anthony"));
+console.log(firstLetter("Ziad"));
+console.log("");
 
 
 //Function that return last character of string
@@ -18,9 +18,9 @@ function lastLetter(str){
     return str.slice(-1);
 }
 
-lastLetter("Anthony");
-lastLetter("Ziad");
-lastLetter("");
+console.log(lastLetter("Anthony"));
+console.log(lastLetter("Ziad"));
+console.log(lastLetter(""));
 
 
 //Function that takes String and Number and return character at that numbers position
@@ -28,3 +28,19 @@ lastLetter("");
 function numStringPosition(str, num){
     return str.substring(num, num + 1);
 }
+
+console.log(numStringPosition("Anthony", 3));
+console.log(numStringPosition("Ziad", 1));
+console.log(numStringPosition("", 5));
+
+
+//Function that adds 2 numbers together
+
+function add(a, b){
+    return a + b;
+}
+
+console.log(add(2, 4));
+console.log(add(5, 7));
+console.log(add("Hi", 5));  //When you input a string, it turn the entire result as string. So if you inputed "hi" and 5, you will get "hi5"
+
