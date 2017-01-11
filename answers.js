@@ -269,3 +269,44 @@ function addArray (arr){
 var array = [3, 4, 9];
 
 console.log(addArray(array));
+
+
+// function that looks at two arrays and ronly returns non duplicates
+
+
+function arrayDiff(arrOne, arrTwo){
+    var diffArray = [];
+    for (var i = 0; i < arrOne.length; i++){
+        for (var j = 0; j < arrTwo.length; j++){
+            if (arrOne[i] === arrTwo[j]){
+                diffArray.push(arrOne[i]);
+            }
+        }
+    }
+    for (var i = 0; i < diffArray.length; i++){
+        arrOne.splice(arrOne.indexOf(diffArray[i]), 1);
+        arrTwo.splice(arrTwo.indexOf(diffArray[i]), 1);
+    }
+    
+    return arrOne.concat(arrTwo);
+}
+
+var arrayOne = [1, 2, 10, 3];
+var arrayTwo = [1, 2, 3, 4, 5];
+
+console.log(arrayDiff(arrayOne, arrayTwo));
+
+
+// Mini Challenge
+
+function miniChallenge(array, func){
+    for(var i = 0; i < array.length; i++){
+        func(array[i]);
+    }
+}
+
+var arr = [2, 4, 6];
+
+miniChallenge(arr, function(happy){
+    console.log(happy);
+});
